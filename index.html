@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Tower of Hanoi</h1>
+        <h2 class="noti">Move Count: 0</h2>
+        
+        <div class="labels">
+            <span class="label">A</span>
+            <span class="label">B</span>
+            <span class="label">C</span>
+        </div>
+        <div class="drop-targets">
+            <div class="box" id="b1">
+                <div class="item" id="i1" draggable="true" >1</div>
+                <div class="item" id="i2" draggable="false" >2</div>
+                <div class="item" id="i3" draggable="false" >3</div>
+                <div class="item" id="i4" draggable="false" >4</div>
+                <div class="item" id="i5" draggable="false" >5</div>
+                <div class="item" id="i6" draggable="false" >6</div>
+            </div>
+            <div class="box" id="b2"></div>
+            <div class="box" id="b3"></div>
+        </div>
+        <div class="instructions">Item 1-6 can be moved between box A,B,C<br>
+            You can only move the top item, and one item at a time<br>
+            Only smaller item can be stacked on top of bigger item<br>
+            You win when all items are moved from box A to box C
+        </div> 
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
